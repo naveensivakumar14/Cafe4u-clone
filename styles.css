@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  text-decoration: none;
+}
+/* body{
+   
+} */
+
+/*--------------------------nav bar section-----------------------------*/
+.hero{
+    height: 100vh;
+    background: url(./images/banner-bg.jpg);
+    background-size: 100%;
+    background-position: center;
+
+}
+header{
+ /* border: 1px solid black; */
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a{
+/*  border: 1px solid black;*/
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+span{
+  color: red;
+}
+
+/*----------------------Hero banner section-----------------------*/
+.hero__banner{
+  /* border: 3px solid black; */
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.hero__content{
+  align-self: center;
+  /* border: 1px solid black; */
+  padding: 10px;
+}
+span{
+  color: red;
+}
+.hero__content button{
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: red;
+  color: white;
+
+}
+.hero__image{
+  padding: 10px;
+  /* border: 2px solid blue; */
+  height: 500px;
+  width: 500px;
+  /* background-color: gray; */
+  flex-wrap: wrap;
+
+}
+.hero__image img{
+  width: 100%;
+  z-index: 0;
+ 
+}
+
+
+
+/*------------------------menu-------------------------------------*/
+
+.menu__section{
+  margin: 10px;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.menu{
+  /* border: 3px solid blue; */
+  margin: 10px;
+  padding: 10px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.menu__item{
+  /* border: 1px solid black; */
+  padding: 10px;
+  width: 280px;
+}
+.menu__item img{
+  width: 100%;
+}
+
+
+
+/*-----------------------------Review-----------------------------*/
+
+
+.review{
+  /* border: 3px solid deeppink; */
+  display: flex;
+  justify-content: space-around;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.review__content{
+  /* border: 1px solid limegreen; */
+  align-self: center;
+  padding: 30px;
+  line-height: 50px;
+}
+.review__content p{
+  font-size: 25px;
+
+}
+
+.review__content button{
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+
+}
+.review__image{
+   width: 700px;
+   padding: 20px;
+  
+}
+.review__image img{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*Responsive*/
+/*----------------------------------------------------------------------------------*/
+/*----------Hero section -Tab and large screens----------- */
+@media screen and (min-width:801px) and (max-width:1050px){
+  .hero{
+    height: 100%;
+  }
+  .hero__content h1{
+    font-size: 25px;
+  }
+  .hero__image{
+    height: auto;
+    width: 350px;
+    /* background-color: cadetblue; */
+  }
+}
+
+/*For small screens*/
+@media screen and (max-width: 800px){
+  /*nav section- hiding*/
+  header a{
+    display: none;
+  }
+  /*---------------------hero section -responsive--------------------*/
+  .hero{
+    height: 100%;
+  }
+  .hero__banner{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero__content h1{
+    font-size: 25px;
+  }
+  .hero__content p{
+    font-size: 12px;
+  }
+
+  .hero__image{
+    margin-top: 20px;
+    /* background-color: #7e8ffa; */
+    height: 300px;
+    width: 300px;
+  }
+
+  /*------------------------menu responsive---------------------*/
+  .menu__item{
+    flex-basis: 50%;
+  }
+  .menu__item img{
+    width: 100%;
+  }
+
+  .menu__item h2{
+    font-size: 14px;
+  }
+  .menu__item p{
+    font-size: 12px;
+  }
+
+
+  /*-------------------Review Responsive ---------------------*/
+
+  .review{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .review__content{
+    padding: 10px;
+    text-align: center;
+  }
+  .review__content h1{
+    font-size: 20px;
+  }
+  .review__content p{
+    font-size: 16px;
+  }
+
+  .review__content button{
+    padding: 10px 20px;
+  }
+
+  .review__image{
+    padding: 5px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
