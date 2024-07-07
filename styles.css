@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap'); */
 
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Jost", sans-serif;
   text-decoration: none;
 }
-/* body{
-   
-} */
+body{
+  font-family: "Gabarito", sans-serif;
+}
 
 /*--------------------------nav bar section-----------------------------*/
 .hero{
@@ -47,9 +46,12 @@ span{
   justify-content: space-between;
 }
 .hero__content{
-  align-self: center;
   /* border: 1px solid black; */
+  align-self: center;
   padding: 10px;
+}
+.hero__content p{
+  margin-top: 10px;
 }
 span{
   color: red;
@@ -70,14 +72,20 @@ span{
   width: 500px;
   /* background-color: gray; */
   flex-wrap: wrap;
-
 }
 .hero__image img{
   width: 100%;
   z-index: 0;
- 
+  animation-name: rotatefunc;
+  animation-duration: 2s;
+  animation-timing-function: linear;
 }
 
+@keyframes rotatefunc{
+  0%{
+    transform: rotate(-360deg);
+  }
+}
 
 
 /*------------------------menu-------------------------------------*/
@@ -125,9 +133,9 @@ span{
 
 .review__content{
   /* border: 1px solid limegreen; */
+  /* line-height: 10px; */
   align-self: center;
   padding: 30px;
-  /* line-height: 10px; */
 }
 .review__content p{
   font-size: 25px;
@@ -141,14 +149,34 @@ span{
   color: white;
 
 }
-/* .review__image{
-   width: 700px;
-   padding: 20px;
-  
+
+
+
+/*---------------------------Blogs--------------------------------*/
+
+.blogs{
+  /* border: 2px solid red; */
+  /* padding: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
 }
-.review__image img{
+.blogs__section{
+  /* border: 1px solid black; */
+  padding: 10px;
+  width: 30%;
+  height: auto;
+}
+.blogs__section img{
   width: 100%;
-} */
+}
+.blogs__content{
+  padding: 10px;
+}
+.blogs__content p{
+  margin-top: 10px;
+}
 
 
 
@@ -162,6 +190,8 @@ span{
 /*Responsive*/
 /*----------------------------------------------------------------------------------*/
 /*----------Hero section -Tab and large screens----------- */
+
+
 @media screen and (min-width:801px) and (max-width:1050px){
   .hero{
     height: 100%;
@@ -224,7 +254,7 @@ span{
 
   .review{
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 3px;
     height: 250px;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -246,10 +276,36 @@ span{
     font-size: 10px;
     padding: 5px 10px;
   }
-/* 
-  .review__image{
-    padding: 20px;
-  } */
+
+
+  /*-------------------Blogs Responsive--------------------------*/
+ .blogs{
+  /* border: 3px solid yellowgreen; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+/*important sudden idea*/
+ .blogs__section{
+  /* border: 1px solid black; */
+  width: 100%;
+  display: flex;
+ }
+
+.blogs__content{
+  align-self: center;
+}
+.blogs__content h2{
+  font-size: 18px;
+}
+.blogs__content p{
+  font-size: 12px;
+}
+
+
+.blogs__section img{
+  width: 40%;
+}
 
 }
 
