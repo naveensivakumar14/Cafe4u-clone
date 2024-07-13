@@ -156,7 +156,7 @@ span{
 
 .blogs{
   /* border: 2px solid red; */
-  /* padding: 10px; */
+  padding: 100px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,7 +165,7 @@ span{
 .blogs__section{
   /* border: 1px solid black; */
   padding: 10px;
-  width: 30%;
+  width: 25%;
   height: auto;
 }
 .blogs__section img{
@@ -178,6 +178,64 @@ span{
   margin-top: 10px;
 }
 
+.blogs__section button{
+  margin-top: 20px;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+/*---------------------Contact US --------------------------*/
+.contactUs{
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  background-image: url(images/banner-bg.jpg);
+  padding: 30px 10px;
+}
+.contact__content{
+  /* border: 2px solid orange; */
+  width: 60%;
+  align-self: center;
+}
+.contact__content p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.contact__buttons{
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+}
+.contact__content img{
+  height: 25px;
+  width: 25px;
+ 
+}
+.contact__content button{
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  
+}
+.contact__image{
+  /* border: 2px solid black; */
+  height: 400px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.contact__image img{
+  height: 100%;
+}
 
 
 
@@ -187,11 +245,66 @@ span{
 
 
 
-/*Responsive*/
+
+
+/*--------------------------Responsive--------------------------*/
+
+
 /*----------------------------------------------------------------------------------*/
 /*----------Hero section -Tab and large screens----------- */
 
+@media screen and (max-width: 1080px){
+  /*------------------contact us responsive-------------------*/
+.contactUs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__content{
+  width: 100%;
+  padding: 10px;;
+  align-self: center;
+  text-align: center;
+}
 
+.contact__content h2{
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.contact__content p{
+  text-align: justify;
+  font-size: 10px;
+  margin: 5px;
+}
+.contact__image{
+  /* border: 2px solid black; */
+  height: 300px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.contact__buttons{
+ justify-content: center;
+
+}
+.contact__content buttons{
+  padding: 5px;
+  font-size: 10px;
+}
+.contact__content img{
+  height: 15px;
+  width: 15px;
+ 
+}
+.contact__image img{
+  height: 100%;
+}
+
+
+
+
+
+}
 @media screen and (min-width:801px) and (max-width:1050px){
   .hero{
     height: 100%;
@@ -204,7 +317,12 @@ span{
     width: 350px;
     /* background-color: cadetblue; */
   }
+
+
 }
+
+
+
 
 /*For small screens*/
 @media screen and (max-width: 800px){
@@ -284,12 +402,14 @@ span{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px 10px;
  }
 /*important sudden idea*/
  .blogs__section{
   /* border: 1px solid black; */
   width: 100%;
   display: flex;
+  justify-content: space-between;
  }
 
 .blogs__content{
@@ -300,12 +420,14 @@ span{
 }
 .blogs__content p{
   font-size: 12px;
+  text-align: justify;
 }
-
 
 .blogs__section img{
   width: 40%;
 }
+
+
 
 }
 
