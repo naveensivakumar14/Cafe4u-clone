@@ -193,12 +193,11 @@ span{
 
 /*---------------------Contact US --------------------------*/
 .contactUs{
-  border: 3px solid black;
   display: flex;
   gap: 20px;
   justify-content: space-around;
   background-image: url(images/banner-bg.jpg);
-  padding: 40px 10px;
+  padding: 60px 10px;
 }
 .contact__content{
   /* border: 2px solid orange; */
@@ -404,9 +403,7 @@ span{
     flex-wrap: wrap;
     justify-content: center;
   }
-  .hero__content{
-    border: 1px solid black;
-  }
+
   .hero__content h1{
     font-size: 22px;
   }
